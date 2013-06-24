@@ -750,7 +750,7 @@ t_Node* AvClusterW(int nE, float** aafDistMatrix, float* afW)
   return atResult;
 }
 
-int outputCluster(t_Params *ptParams, t_Node* tree, char **aszID, int nN)
+void outputCluster(t_Params *ptParams, t_Node* tree, char **aszID, int nN)
 {
   int i = 0, j = 0, k = 0, l = 0;
   int nNodes = nN - 1;

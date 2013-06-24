@@ -71,7 +71,7 @@ void getCommandLineParams(t_Params *ptParams,int argc,char *argv[]);
 
 void readDistanceMatrix(char ***paszID, char *szDistFile, float *** paafDist, int *pnN, t_Params *ptParams, float** pafW);
 
-int outputCluster(t_Params *ptParams, t_Node* tree, char **aszID, int nN);
+void outputCluster(t_Params *ptParams, t_Node* tree, char **aszID, int nN);
 
 void scaleDistances(float **aafDist, int nN);
 
