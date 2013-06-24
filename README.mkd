@@ -1,0 +1,12 @@
+# AmpliconNoise
+
+This repository contains a clone of the
+[AmpliconNoise svn repository](http://code.google.com/p/ampliconnoise/) (in the
+[master](https://github.com/b4winckler/ampliconnoise/tree/master) branch).
+
+My local patches can be found in the
+[b4winckler](https://github.com/b4winckler/ampliconnoise/tree/b4winckler)
+branch.  These patches include fixes for compilation errors on OS X as well as
+fixes to the `CleanMinMax.pl` script which caused failures to primers including
+the `W` symbol.  **WARNING** This branch may be rebased against master
+occasionally.
