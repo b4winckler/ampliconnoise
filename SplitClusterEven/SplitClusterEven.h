@@ -88,7 +88,7 @@ void writeTree(t_Node *ptTree, FILE* ofp);
 
 void treeSplit(t_Node* ptTree, double* pdDepth, double dSplit, t_Node **aptSplit,int* pnSplit);
 
-double maxDepth(t_Node* ptTree, double* pdMaxDepth);
+void maxDepth(t_Node* ptTree, double* pdMaxDepth);
 
 void writeIndices(t_Node* ptTree, FILE* ofp);
 
@@ -116,4 +116,4 @@ void setLeaves(t_Node* ptTree);
 
 void treeSplitEven(t_Node* ptTree, int nSplit, t_Node **aptSplit,int* pnSplit);
 
-double setDepth(t_Node* ptTree, double dDepth);
+void setDepth(t_Node* ptTree, double dDepth);

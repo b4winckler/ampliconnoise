@@ -366,7 +366,7 @@ void treeSplitEven(t_Node* ptTree, int nSplit, t_Node **aptSplit,int* pnSplit)
   
 }
 
-double maxDepth(t_Node* ptTree, double* pdDepth)
+void maxDepth(t_Node* ptTree, double* pdDepth)
 {
   double dOldDepth = *pdDepth;
 
@@ -374,11 +374,9 @@ double maxDepth(t_Node* ptTree, double* pdDepth)
     (*pdDepth) += ptTree->dLeft;
     maxDepth(ptTree->ptLeft, pdDepth);
   }
-
-  return;
 }
 
-double setDepth(t_Node* ptTree, double dDepth)
+void setDepth(t_Node* ptTree, double dDepth)
 {
   double dOldDepth = dDepth;
 
@@ -389,8 +387,6 @@ double setDepth(t_Node* ptTree, double dDepth)
 
     setDepth(ptTree->ptRight, dDepth + ptTree->dRight);
   }
-
-  return;
 }
 
 void writeIndices(t_Node* ptTree, FILE* ofp)
