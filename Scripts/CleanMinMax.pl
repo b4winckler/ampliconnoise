@@ -129,8 +129,10 @@ sub flowToSeq()
 sub translateIUPAC()
 {
   my ($seq) = @_;
+
+  $seq=~s/W/\[AT\]/g;
   $seq=~s/B/\[CGT\]/g;
-  $seq=~s/S/\[GC\]/g;    
+  $seq=~s/S/\[GC\]/g;
   $seq=~s/N/\[ACTG\]/g;
   $seq=~s/Y/\[CT\]/g;
   $seq=~s/R/\[AG\]/g;
