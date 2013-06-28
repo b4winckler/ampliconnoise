@@ -1,12 +1,16 @@
 # AmpliconNoise
 
 This repository contains a clone of the
-[AmpliconNoise svn repository](http://code.google.com/p/ampliconnoise/) (in the
-[master](https://github.com/b4winckler/ampliconnoise/tree/master) branch).
+[AmpliconNoise svn repository](http://code.google.com/p/ampliconnoise/) in the
+[svn](https://github.com/b4winckler/ampliconnoise/tree/svn) branch.
 
 My local patches can be found in the
-[b4winckler](https://github.com/b4winckler/ampliconnoise/tree/b4winckler)
-branch.  These patches include fixes for compilation errors on OS X as well as
-fixes to the `CleanMinMax.pl` script which caused failures to primers including
-the `W` symbol.  **WARNING** This branch may be rebased against master
-occasionally.
+[master](https://github.com/b4winckler/ampliconnoise/tree/master) branch.
+These patches include:
+
+-   removal of compilation errors on OS X,
+-   fix for a bug in the `CleanMinMax.pl` script which caused failures when
+    using primers including the `W` symbol
+-   the `FastaUnique` program no longer inserts a spurious newline after 80
+    bases (I debated properly limiting the line length to 80 characters, but
+    since no other part of Amplicon Noise does this I decided against it)
