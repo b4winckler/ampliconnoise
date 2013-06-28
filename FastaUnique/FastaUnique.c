@@ -99,10 +99,6 @@ void writeSequence(FILE *ofp, t_Data *ptData, int nCopies, int nI)
   fprintf(ofp,">%s_%d\n",ptData->aszID[nI],nCopies);
 
   while(nPos < ptData->anLen[nI]){
-    if(nPos == 80){
-      fputc('\n',ofp);
-    }
-
     fputc(ptData->aacSequences[nI][nPos],ofp);
 
     nPos++;
