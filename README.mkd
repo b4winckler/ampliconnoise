@@ -8,9 +8,9 @@ My local patches can be found in the
 [master](https://github.com/b4winckler/ampliconnoise/tree/master) branch.
 These patches include:
 
--   removal of compilation errors on OS X,
--   fix for a bug in the `CleanMinMax.pl` script which caused failures when
+-   Removal of compilation errors on OS X
+-   Fix for a bug in the `CleanMinMax.pl` script which caused failures when
     using primers including the `W` symbol
--   the `FastaUnique` program no longer inserts a spurious newline after 80
+-   The `FastaUnique` program no longer inserts a spurious newline after 80
     bases (I debated properly limiting the line length to 80 characters, but
     since no other part of Amplicon Noise does this I decided against it)
